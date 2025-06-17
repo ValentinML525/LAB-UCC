@@ -1,0 +1,213 @@
+@font-face {
+  font-family: 'Italianno';
+  src: url('Assets/Font/Italianno-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --black: #000000;
+  --oxford-blue: #14213d;
+  --orange-web: #fca311;
+  --platinum: #e5e5e5;
+  --white: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--platinum);
+  color: var(--oxford-blue);
+}
+
+header,
+footer {
+  background-color: var(--oxford-blue);
+  color: var(--white);
+  text-align: center;
+  padding: 15px 0;
+}
+
+footer {
+  font-size: 0.9em;
+  margin-top: 40px;
+}
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 120px);
+}
+
+.login-container {
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+.login-container input,
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid var(--platinum);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.login-container button {
+  background-color: var(--orange-web);
+  color: var(--oxford-blue);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+  background-color: #e59300;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.carrito-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.carrito-container {
+  width: 100%;
+  max-width: 800px;
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.descripcion {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.producto {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: var(--platinum);
+  border-radius: 8px;
+}
+
+.producto img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.info {
+  flex: 1;
+}
+
+.info h4 {
+  margin: 0 0 5px;
+}
+
+.info .precio {
+  color: var(--oxford-blue: );
+  font-weight: bold;
+}
+
+input[type=\"number\"] {
+  width: 70px;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+
+.boton-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 1em;
+  background-color: var(--orange-web);
+  border: none;
+  color: var(--oxford-blue);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e59300;
+}
+.video-header {
+  width: 100%;
+  height: auto;
+  max-height: 800px;
+  object-fit: cover;
+  display: block;
+}
+.fondo-carrito {
+  background-color: var(--platinum);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 40px 20px;
+}
+
+.carrito-container {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+.video-header-wrapper {
+  position: relative;
+  width: 100%;
+  max-height: 800px;
+  overflow: hidden;
+}
+
+.video-header {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.video-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: transparent;
+  padding: 20px;
+  color: var(--white);
+  font-size: 30px;
+}
+
+.boton-overlay {
+  display: inline-block;
+  background-color: var(--orange-web);
+  color: var(--oxford-blue);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.boton-overlay:hover {
+  background-color: #e59300;
+}
